@@ -3,5 +3,6 @@
 Console.Clear();
 Console.Write("Введите число дня недели: ");
 int number = int.Parse(Console.ReadLine()!);
-if (number == 6 || number == 7) Console.WriteLine("Этот день выходной");
-else Console.WriteLine("Этот день не выходной");
+if (number < 1 || number > 7) Console.WriteLine("Такого числа дня недели не существует");
+else if (number == 6 || number == 7) Console.WriteLine("Этот день выходной");
+     else Console.WriteLine("Этот день не выходной");
